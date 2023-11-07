@@ -14,3 +14,15 @@ In this case the time complexity is always O(nlogn) because I change the pivot a
 ## 03: Doubly Linked List:
 
 This implementation has a doubly linked list which contains nodes that have two pointers to other nodes. The first pointer points to the next node and the second pointer points to the previous node. Time Complexity for all operation is O(1) except removing the last element from the doubly linked list
+
+
+## 04: Implementing Stack using array:
+
+#### Time Complexity : 
+Insert at the end : O(1)
+Delete at the end : O(1)
+Reading at the end : O(1)
+
+Stack is a Abstract Data Type(ADT). Because, many languages has no built in stack data type and we make stack using different built-in data structure like array,map,linkedList etc.
+
+ 
