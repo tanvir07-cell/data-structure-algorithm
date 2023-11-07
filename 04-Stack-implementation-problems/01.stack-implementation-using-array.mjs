@@ -1,14 +1,14 @@
 class Stack{
     
     
-  constructor(){
+  constructor(value){
     this.stack = [];
-    this.size = 5;
+    this.maxSize = value;
     this.top = -1;
   }
 
   push(value){
-     if(this.#isFull()){
+     if(this.isFull()){
         return `Limit exceeded!`
      }
      this.top++;
@@ -18,31 +18,33 @@ class Stack{
   }
 
   pop(){
-   if(this.#isEmpty()){
+   if(this.isEmpty()){
     return `Stack is empty!`
    } 
    this.stack.pop();
-   this.size--;
+   this.maxSize--;
    this.top--;
   }
 
   peek(){
-    if(!this.#isEmpty()){
+    if(!this.isEmpty()){
      return this.stack[this.top];
     }
   }
   
-  #isEmpty(){
-    return this.size === 0;
+  isEmpty(){
+    return this.top === -1;
   }
 
 
-  #isFull(){
-    return this.top === this.size-1;
+  isFull(){
+    return this.top === this.maxSize-1;
 
   }
 
 }
+
+export default Stack;
 
 // let st = new Stack();
 // st.push(1);
