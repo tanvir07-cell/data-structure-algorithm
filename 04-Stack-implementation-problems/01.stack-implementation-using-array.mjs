@@ -22,7 +22,7 @@ class Stack{
     return `Stack is empty!`
    } 
    this.stack.pop();
-   this.maxSize--;
+  
    this.top--;
   }
 
