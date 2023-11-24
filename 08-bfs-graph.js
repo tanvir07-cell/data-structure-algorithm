@@ -43,22 +43,20 @@ class Graph {
 }
 
 let graph = new Graph();
-graph.addVertex(1);
+graph.addVertex("Me");
 
-graph.addEdges(1, 2);
-graph.addEdges(1, 3);
-graph.addEdges(1, 4);
+graph.addEdges("Me", "Alice");
+graph.addEdges("Me", "Bob");
+graph.addEdges("Me", "Claire");
 
-graph.addEdges(2, 1);
-graph.addEdges(2, 4);
+graph.addEdges("Bob", "Anuj");
+graph.addEdges("Bob", "Peggy");
 
-graph.addEdges(3, 1);
-graph.addEdges(3, 4);
+graph.addEdges("Claire", "Thom");
+graph.addEdges("Claire", "Jonny");
 
-graph.addEdges(4, 1);
-graph.addEdges(4, 2);
-graph.addEdges(4, 3);
+graph.addEdges("Alice", "Peggy");
 
 console.log(graph);
 
-graph.bfs(1);
+graph.bfs("Me");

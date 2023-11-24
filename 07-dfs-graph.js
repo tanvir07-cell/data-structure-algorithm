@@ -41,21 +41,20 @@ class Graph {
 }
 
 let graph = new Graph();
-graph.addVertex("A");
-graph.addEdges("A", "B");
-graph.addEdges("A", "C");
-graph.addEdges("A", "D");
+graph.addVertex("Me");
 
-graph.addEdges("B", "A");
-graph.addEdges("B", "D");
+graph.addEdges("Me", "Alice");
+graph.addEdges("Me", "Bob");
+graph.addEdges("Me", "Claire");
 
-graph.addEdges("C", "A");
-graph.addEdges("C", "D");
+graph.addEdges("Bob", "Anuj");
+graph.addEdges("Bob", "Peggy");
 
-graph.addEdges("D", "B");
-graph.addEdges("D", "C");
-graph.addEdges("D", "A");
+graph.addEdges("Claire", "Thom");
+graph.addEdges("Claire", "Jonny");
+
+graph.addEdges("Alice", "Peggy");
 
 console.log(graph);
 
-graph.Dfs("B");
+graph.Dfs("Me");
